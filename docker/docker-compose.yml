@@ -1,0 +1,26 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3.6-management
+    ports:
+    - "5672:5672"
+    - "15672:15672"
+    environment:
+    - RABBITMQ_DEFAULT_USER=devuser
+    - RABBITMQ_DEFAULT_PASS=devpass
+    - RABBITMQ_DEFAULT_VHOST=devhost
+    networks:
+    - common
+
+  message_store_amqp:
+    image: php_base:1.1
+    volumes:
+    - ..:/srv/app
+    working_dir: /srv/app
+    command: 'docker/wait-for-it.sh rabbitmq:15672 -- vendor/phpunit/phpunit/phpunit tests'
+    networks:
+    - common
+
+networks:
+  common:
+    driver: bridge

@@ -1,0 +1,24 @@
+{
+  "name": "soa-php/message-store-amqp",
+  "description": "Message Store implementation with AMQP protocol",
+  "license": "MIT",
+  "require": {
+    "php": "^7.2",
+    "soa-php/message-store": "^1.1",
+    "ext-amqp": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Soa\\MessageStoreAmqp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Soa\\MessageStoreAmqpTest\\": "tests/"
+    }
+  }
+}
