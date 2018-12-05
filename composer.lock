@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "eab3acdbec27534f13b39401e9cbbe8a",
+    "content-hash": "cece52d1b199a194e78ef466d392b9cc",
     "packages": [
         {
             "name": "psr/container",
@@ -175,16 +175,16 @@
         },
         {
             "name": "soa-php/message-store",
-            "version": "1.1.2",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/soa-php/message-store.git",
-                "reference": "672e2fd1181bfe82713e1349328bd3fff8c5a816"
+                "reference": "906508994ba8d3c69e5990841e054708b5a0ceca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/soa-php/message-store/zipball/672e2fd1181bfe82713e1349328bd3fff8c5a816",
-                "reference": "672e2fd1181bfe82713e1349328bd3fff8c5a816",
+                "url": "https://api.github.com/repos/soa-php/message-store/zipball/906508994ba8d3c69e5990841e054708b5a0ceca",
+                "reference": "906508994ba8d3c69e5990841e054708b5a0ceca",
                 "shasum": ""
             },
             "require": {
@@ -193,7 +193,7 @@
                 "psr/container": "^1.0",
                 "psr/log": "^1.0",
                 "react/event-loop": "^1.0",
-                "soa-php/clock": "^1.1"
+                "soa-php/clock": "^1.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^7.4"
@@ -209,7 +209,7 @@
                 "MIT"
             ],
             "description": "Persist messages and publish/subscribe them to/from a broker",
-            "time": "2018-12-05T01:38:59+00:00"
+            "time": "2018-12-05T02:26:59+00:00"
         }
     ],
     "packages-dev": [

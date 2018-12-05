@@ -4,7 +4,7 @@
   "license": "MIT",
   "require": {
     "php": "^7.2",
-    "soa-php/message-store": "dev-master",
+    "soa-php/message-store": "^1.0",
     "ext-amqp": "*",
     "ext-json": "*"
   },
